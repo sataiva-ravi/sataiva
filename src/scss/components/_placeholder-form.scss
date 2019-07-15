@@ -1,0 +1,8 @@
+ // Placeholder label
+.placeholder-label {
+	border-bottom:1px solid $tiber;
+	display: block;
+	&-input {
+		padding: 10px 0px;
+	}
+}

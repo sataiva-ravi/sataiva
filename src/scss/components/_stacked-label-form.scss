@@ -1,0 +1,10 @@
+// Stacked lable
+.stacked-label {
+	border-bottom:1px solid $tiber;
+	&, &-name {
+		display: block;
+	}
+	&-input {
+		padding: 10px 0px;
+	}
+}

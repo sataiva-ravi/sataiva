@@ -1,0 +1,42 @@
+.file-browse{
+	.button{
+		background-color: transparent;
+		font-size: $font-md;
+		line-height: 20px;
+		min-width: 130px;
+		width: 130px;
+		text-decoration: underline;	
+		@include position(absolute, $top: 0, $right: 0);
+		@include box-shadow(none);
+		&:before, &:after{
+			display: none;	
+		}
+	}
+	input{
+		padding-right: 140px;
+	}
+	.file-upload{
+		z-index: 99;
+		line-height: 27px;
+	}
+	.upload-input{
+		padding-right: 0px;		
+		&:hover{
+			button{		
+				color: $link-color;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:640px) {
+	.file-browse{
+		.button{
+			min-width: 90px;
+			width: 90px;
+		}
+		input{
+			padding-right: 90px;
+		}
+	}
+}

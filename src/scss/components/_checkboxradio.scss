@@ -1,0 +1,112 @@
+.checkboxradio {	
+	&-row {
+		padding: 0px 15px 23px 0px;
+	}
+	&-label {
+		cursor: pointer;
+		display:inline-block;
+		line-height: 26px;
+		padding-left: 50px;
+		font-size: $font-md3;
+		position: relative;
+		&:before {
+			background: transparent;
+			border:1px solid $tiber;
+			content:"";
+			left:2px;
+			position: absolute;
+			top:0px;
+			@include width-height(25px, 25px);
+			transition: all 250ms cubic-bezier(.4, .0, .23, 1);
+		}
+		&.disabled {
+			color: $grey;
+			cursor: default;
+			&:before {
+				border:1px solid $grey!important;				
+			}
+			&:after{
+				display:none;
+			}
+		}
+	}
+	.radio-label {
+		&:before {
+			@include border-radius(100%);
+		    border:1px solid $tiber;
+			background-color: #fff;
+		}
+		&.disabled {
+			cursor: default;
+			&:before {
+				border:1px solid $grey!important;
+				background:transparent!important;
+			}
+			&:after{
+				display: none;
+			}
+		}
+		&:after{
+			background-color: $tiber;
+			content:'';
+		    display: block;
+		    margin: 1px;
+		    left:4px; 
+		    position: absolute;
+		    @include border-radius(100%);
+		    @include transition-event;
+		    @include transform (scale(0));
+		    @include width-height(16px, 16px);
+		    top:2px;
+		}
+
+		&:hover{
+			&:after{
+				background-color:$tiber;
+				margin:6px; 
+				@include width-height(9px, 9px);
+				@include transform (scale(1));
+			}
+		}
+	}
+	&-item:checked ~ label{
+		&:before {
+			color:$white;
+		 	position: absolute;
+		 	text-align: center;
+		}
+	}
+	&-item:checked ~ .checkbox-label{
+		&:before {
+		    border: 12.5px solid $pink;
+			@include animation(shrink-bounce 400ms cubic-bezier(.4, .0, .23, 1));
+		}
+		&:after{
+			color:$white;
+			content:"";
+			position: absolute;
+			top:12px;
+			left:7px;
+			border-right: 3px solid transparent;
+			border-bottom: 3px solid transparent;
+			transform: rotate(45deg);
+			transform-origin: 0% 100%;
+			@include animation(checkbox-check 300ms 400ms cubic-bezier(.4, .0, .23, 1) forwards);
+		}
+	}
+	&-item:checked ~ .radio-label{
+		&:before {
+			background-color: $pink;
+			border:1px solid $pink;
+		}
+		&:after{
+			background-color:$white;
+			margin:6px;
+			@include width-height(9px, 9px);
+			@include transform (scale(1));
+		}
+	}
+	&-invisible {
+		display: none;
+	}
+}

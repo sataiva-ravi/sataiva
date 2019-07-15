@@ -1,0 +1,124 @@
+.floating-item {
+	display: block;
+	position: relative;
+	width:100%;
+	&:before{
+		background-color: $floating-fm-border;
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 0;
+		height: 1px;
+		@include transform(translateX(-50%));
+		@include transition-event(all, 300ms, ease-in);
+	}
+	&.input-animate{
+		&:before{
+			width: 100%;
+		}
+	}
+	&-input {
+		border: {
+			bottom:1px solid $floating-fm-label;
+			left: 0;
+			right: 0;
+			top: 0;
+		}	
+		color: $form-active-text;
+		font-size:$font-md3;
+		@include transition-event(border, 0.25s, ease-in);
+		padding:4px 0 4px 0;
+		width: 100%;
+		&:focus {
+			border-color:$black;
+		}
+	}
+	&-input:focus ~ &-label {
+		color:$floating-fm-label;
+	}
+	&-input:focus ~ &-label, .input-email-active ~ &-label {
+	    color:$floating-fm-label;
+	    font-size: $font-md;
+		top:-15px;
+		background-color: transparent;		
+	}
+	&-label {
+		@include transition-event(all, 0.15s, ease-in);
+		background-color: transparent;
+		color: $body-color;
+		cursor: text;
+		left:0; 
+		position: absolute;
+		font-size:$font-md2;
+		text-transform: uppercase;
+		top:8px;
+		line-height:18px;
+	}
+	&-icon {
+		color: $deep-cerise;
+		font-size: $font-lg;
+		line-height: 20px;
+		left:15px;
+		position: absolute;
+		top:14px;
+	}
+}
+.input-with-icon .floating-item-input {
+	padding-left: 40px;
+}
+
+input[type="file"]{
+	opacity:0;
+}
+
+input[type="file"], 
+.upload-button, .subscribe-button {	
+	cursor:pointer;
+	position: absolute;
+	top:0;
+	width:100%;
+	right:0;
+}
+
+.upload-button, .subscribe-button {
+	border:none;
+	width:150px;
+	padding: 7px 15px;
+}
+
+.upload-input{
+	padding-right:150px;
+}
+.succes-message {
+	display:none;
+	padding:15px 0 0 0;
+}
+.subscribe-button {
+	background-color:$black;
+	.button {
+		background-color:$black;
+		color:$white;
+		height:100%;
+		margin:0;
+		min-width:100%;
+		padding:0;
+		@include transition(none);
+	}
+	.preloader {
+		display:none;
+		margin:-17px 0 0 -17px;
+		position:absolute;
+		left:50%;
+		top:50%;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type=password] {
+        -webkit-text-stroke-width: .2em;
+        letter-spacing: 0.2em;
+        text-indent:3px;
+    }
+}
+

@@ -1,0 +1,77 @@
+// Form common
+.form{
+	padding-right: 10px;
+	&-row {
+		margin-bottom: 36px;
+		&.error-row{
+			.floating-item-label, 
+			.floating-item-input:focus ~ .floating-item-label{
+				color:$pink;
+			}
+		}
+		.error-message{
+			color:$pink;
+			display: none;
+			font-size:$font-md3;
+			padding: 5px 0px;
+		}		 
+	} 
+	&-introContent{
+		padding-bottom: 30px;
+		>:last-child{
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+		}
+	}
+} 
+.input-item {
+	background: transparent;
+	display: block;
+	font:{
+		size:$font-md;
+	}
+	line-height: 24px;
+	width: 100%;
+}
+textarea,
+input{
+	border-radius: 0px!important;
+	border:{
+		left: 1px solid transparent!important;
+		right: 1px solid transparent!important;
+		top: 1px solid transparent!important;
+	}
+	resize: none;
+}
+textarea:focus, input:focus{
+    outline: none!important;
+}
+.info-message{
+	display: block;
+	padding-bottom:20px;
+}
+
+.load-content {
+	display:none;
+	&:first-child {
+		display: block;
+	}
+}
+.error-row{
+	.floating-item{
+		&:before{
+			background: $pink;
+			width: 100%;
+		}
+	} 
+}
+label{
+	margin-bottom: 0px;
+}
+@media screen and (max-width:768px){
+	.form {
+		.button {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,117 @@
+//import helpers file
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+@import '../../../node_modules/compass-mixins/lib/compass';​
+
+
+figure, h1, h2, h3, h4, h5, h6, p{
+	margin:0;
+}
+
+figcaption{
+	padding:0;
+}
+p{
+	padding-bottom:20px;
+	a{
+		font-family: $font-quicksandBold;	
+		color: $pink;
+	}
+}
+img{ max-width:100%;}
+.center-block {
+    float: none;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+a{
+	&:hover, &:focus{
+		text-decoration:none;
+		color: $body-color;
+	}
+}
+
+ul {
+	margin-bottom: 0;
+	padding:0;
+}
+ol, ul { list-style:none;}
+input:focus{
+	outline: none;
+}
+body {
+	background: $body-bg;
+	color: $body-color;
+	font: {
+		family: $font-quicksandRegular;
+		size: $font-lg;
+	}
+	line-height: 30px;
+	letter-spacing: -0.5px;
+}
+h1, h2, h3, h4, h5{
+	color: $tint;
+	font-family:$font-quicksandBold;
+	letter-spacing: -0.75px;
+}
+h1{
+	font-size: $font-xl;
+	line-height: 54px;
+}
+h2{
+	font-size:$font-lg5;
+	line-height:42px;
+	padding-bottom: 15px;
+}
+h3{
+	font-size: $font-lg3;
+	line-height:30px;
+	padding-bottom: 15px;
+}
+h4{
+	font-size: $font-lg;
+	line-height:24px;
+}
+h5{
+	font-size: $font-sm;
+	line-height:18px;
+}
+h6 {
+	font: {
+		size: $font-md2;
+	}
+	letter-spacing:2px;
+    line-height:22px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.y-hidden {
+	overflow-y: hidden;
+}
+
+.parallax {
+	background-attachment: fixed;
+}
+
+.fR {
+	float: right;
+}
+
+.section-row{
+	padding: 70px 0 88px;
+}
+.container{
+	max-width: 1200px;
+	width: 100%;
+}
+@media screen and(max-width: 1200px){
+	.container{
+		max-width: 100%;
+	}
+}

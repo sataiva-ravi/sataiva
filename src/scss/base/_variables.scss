@@ -1,0 +1,101 @@
+/////////////////
+// Font-family
+////////////////
+$relative-path: '/html';
+$font-UniviaProLight: 'UniviaProLight',sans-serif;
+$font-UniviaProBold: 'UniviaProBold',sans-serif;
+$font-RobotoSlab: 'Roboto Slab', serif;
+$font-awesome: 'FontAwesome';
+$font-stack: $font-UniviaProLight;
+$font-monstererLight: 'Montserrat-Light',sans-serif;
+$font-quicksandRegular: 'Quicksand-Regular', sans-serif;
+$font-quicksandBold: 'Quicksand-Bold', sans-serif;
+
+/////////////////
+// Font-size
+////////////////
+$font-xs: 10px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-md2: 15px;
+$font-md3: 16px;
+$font-md4: 18px;
+$font-lg: 20px;
+$font-lg1: 21px;
+$font-lg2: 22px;
+$font-lg3: 24px;
+$font-lg4: 32px;
+$font-lg5: 36px;
+$font-xl: 48px;
+$font-xll: 64px;
+$font-xl2: 72px;
+$size: 45px;
+
+$button-fontSize: 16px;
+/////////////////
+// Colors
+////////////////
+
+$body-bg:#f1f1f1;
+$body-color:#474047;
+$tiber: #2a3b55; // primary color 
+$deep-cerise: #41D4D8; // secondary color
+$tint: #412041;
+$wrapper: #1e2337;
+$nav-bg: #212c3b;
+$headline:#6cbef0;
+$olution-border: #2b3043;
+$black: #2e2e2e; 
+$white: #fff; 
+$red: #c4110c;
+$silver: #f0f0f0;
+$grey:#9a9899;
+$tw-blue:#17a2f7;
+$fb-blue:#3a579b; 
+$sky-blue: #71bfed; 
+$light-blue: #6cbdf2;
+$trout: #4d4f68;
+$alabaster: #fafafa;
+$brightblue: #25e8ee;
+$darkgray:#dddce4;
+$cards-border: #d5d8dd;
+$primary-color: #292b2c;
+$sandal-bg:#e4e4dc;
+$pink: #e42828;
+$light-pink:#f5e1e2;
+$red:#f87a41;
+$red-dark:#983134;
+$gray:#5e5e5e;
+$dark-blue:#1e2337;
+$light-gray:#e5e4df;
+$black:#0b0b0b;
+$violet: #421f41;
+
+$link-color: #401e3f;
+$link-hoverColor: $pink;
+$gradient-orange: #f5b393;
+$light-orange: #f7ccb9;
+$gradient-pink: #f59d9c;
+
+// footer
+$border: #e3e4e6;
+$footer-bg: #1e1c1f;
+$footer-border: #32445a;
+$footer-color:#b2a6b2;
+$footer-seperator: #6d6f6e;
+$cardShadow: #421f41;
+
+
+//button colors
+$primaryButton: #e42828;
+$primaryButtonHover: $violet;
+
+// form
+$form-seperator: #f6f6f6;
+$button-disable: #d8d9dd;
+$button-disable-bg: #f7f7f9;
+$select-row:$button-disable-bg;
+$floating-fm-border: #0a0c0a;
+$floating-fm-label: #9d9e9d;
+$form-active-text: #3b3c3b;
+

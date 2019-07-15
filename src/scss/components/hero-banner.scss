@@ -1,0 +1,81 @@
+.hero-banner{
+	h1, h2{
+		text-align: center;
+	}
+	&-slide{
+		position: relative;
+	}
+	img{
+		height:1050px;
+		width: 100%;
+		object-fit:cover;
+		object-position: center;
+	}
+	&-desc{
+		@include position(absolute, $left:0, $top: 50%);
+		@include transform(translateY(-50%));
+		width: 100%;
+	}
+	&-desc-right{
+		@include position(absolute, $right:0, $top: 50%);
+		@include transform(translateY(-50%));
+		width: 100%;
+	}
+	&-desc-center{
+		@include position(absolute, $left:50%, $top: 50%);
+		@include transform(translate(-50%, -50%));
+	}
+	.bottom{
+		bottom: 30px!important;
+		@include transform(inherit);
+		top: auto;
+	}
+	.top{
+		top: 140px!important;
+		@include transform(translate(-50%, 0%)!important);
+		bottom: auto;
+		text-align: center;
+		max-width: 800px;
+    width: 100%;
+	}
+	h1{
+		padding-bottom: 1rem;
+		text-transform: uppercase;
+	}	
+}
+.banner{
+	&-card{
+		color: white;
+		text-align: center;
+		h2{
+			color: white;
+		}
+		ul{
+			display: flex;
+			@include flex-direction(row);
+			width: 100%;
+			margin: 0 -15px;
+		}
+		li{
+			border: 1px solid white;
+			padding: 20px;
+			flex: 1;
+			margin: 0px 15px 15px;
+			cursor: pointer;
+			position: relative;
+			z-index: 2;
+			&:before{
+				content:"";
+				background-color: rgba($tw-blue, 0.5);
+				@include position(absolute, $left:0, $right:0, $top:0, $bottom:0);
+				@include transition(all 0.25s ease-in-out);
+				z-index: -1;
+			}
+			&:hover{
+				&:before{
+					background-color: rgba($tw-blue, 0.9);
+				}
+			}
+		}
+	}
+}

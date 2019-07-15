@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$relative-path}/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('#{$relative-path}/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('#{$relative-path}/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+       url('#{$relative-path}/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+       url('#{$relative-path}/fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg'),
+       url('#{$relative-path}/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniviaProLight';
+  src: url('#{$relative-path}/fonts/UniviaProLight.eot');
+  src: url('#{$relative-path}/fonts/UniviaProLight.eot') format('embedded-opentype'),
+       url('#{$relative-path}/fonts/UniviaProLight.woff2') format('woff2'),
+       url('#{$relative-path}/fonts/UniviaProLight.woff') format('woff'),
+       url('#{$relative-path}/fonts/UniviaProLight.ttf') format('truetype'),
+       url('#{$relative-path}/fonts/UniviaProLight.svg#UniviaProLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UniviaProBold';
+  src: url('#{$relative-path}/fonts/UniviaProBold.eot');
+  src: url('#{$relative-path}/fonts/UniviaProBold.eot') format('embedded-opentype'),
+       url('#{$relative-path}/fonts/UniviaProBold.woff2') format('woff2'),
+       url('#{$relative-path}/fonts/UniviaProBold.woff') format('woff'),
+       url('#{$relative-path}/fonts/UniviaProBold.ttf') format('truetype'),
+       url('#{$relative-path}/fonts/UniviaProBold.svg#UniviaProBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('#{$relative-path}/fonts/Montserrat-Light.eot');
+  src: url('#{$relative-path}/fonts/Montserrat-Light.woff2') format('woff2'),
+       url('#{$relative-path}/fonts/Montserrat-Light.woff') format('woff'),
+       url('#{$relative-path}/fonts/Montserrat-Light.ttf') format('truetype'),
+       url('#{$relative-path}/fonts/Montserrat-Light.svg#Montserrat-Light') format('svg'),
+       url('#{$relative-path}/fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url('#{$relative-path}/fonts/Quicksand-Regular.eot');
+  src: url('#{$relative-path}/fonts/Quicksand-Regular.woff2') format('woff2'),
+       url('#{$relative-path}/fonts/Quicksand-Regular.woff') format('woff'),
+       url('#{$relative-path}/fonts/Quicksand-Regular.ttf') format('truetype'),
+       url('#{$relative-path}/fonts/Quicksand-Regular.svg#Quicksand-Regular') format('svg'),
+       url('#{$relative-path}/fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url('#{$relative-path}/fonts/Quicksand-Bold.eot');
+  src: url('#{$relative-path}/fonts/Quicksand-Bold.woff2') format('woff2'),
+       url('#{$relative-path}/fonts/Quicksand-Bold.woff') format('woff'),
+       url('#{$relative-path}/fonts/Quicksand-Bold.ttf') format('truetype'),
+       url('#{$relative-path}/fonts/Quicksand-Bold.svg#Quicksand-Bold') format('svg'),
+       url('#{$relative-path}/fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

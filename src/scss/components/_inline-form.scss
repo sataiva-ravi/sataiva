@@ -1,0 +1,52 @@
+// Inline label
+$input-ctrl-height:50px;
+.inline-label {
+	background-color: $tiber;
+	border:1px solid $tiber;
+	display: block;
+	min-height: $input-ctrl-height;
+	padding-left: 140px;
+	position: relative;
+	&-name {
+		background-color: $tiber;
+		display: table;
+		font-size:$font-xs;
+		left:0px;
+		line-height: 20px;
+		height: 46px;
+		padding:5px 10px;
+		position: absolute;
+		top:0px;
+		width: 140px;
+		&-cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	&-input {
+		background-color:$tiber;
+		border-left:1px solid $tiber;
+		display: block;
+		height: 46px;
+		padding: 15px;
+		&-hidden {
+			left: 0px;
+			opacity:0;
+			position: absolute;
+			top:0px;
+			z-index: 1;
+		}
+	}
+	&-textarea {
+		height: 90px;
+	}
+	&-browse-btn {
+		border:none;
+		height: 46px;
+		position: absolute;
+		right: 0px;
+		text-align: center;
+		top:0px;
+		width: 100px;
+	}
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Sataiva | Technologies</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/app.css"> -->	
+	<!-- Roboto Slab font included -->
+	
+	<!-- modernizr included -->
+	<style type="text/css">
+		body{
+			background-color: #fff;
+		}  
+		.render-blk{ opacity:0; }
+	</style>
+	<script type="text/javascript">
+		var cssArr = ['css/app.css'];
+		for(var i = 0; i < cssArr.length; i++) {
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('type', 'text/css');
+			link.setAttribute('href', cssArr[i]);
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
+	</script>
+	<noscript>
+		<style type="text/css" media="screen">
+			.render-blk{ opacity: 1; }	
+		</style>
+	</noscript>
+</head>
+	<body>
+		<div class="render-blk subpage">
+			<header>
+				<div class="container">
+					<!-- <div class="row">
+						<a href="#" class="col-2 logo">logo</a>
+						<div class="col-10">
+							<nav>
+								<ul>
+									<li><a href="#">Menu 1</a></li>
+									<li><a href="#">Menu 2</a>
+										<ul>
+											<li><a href="#">Sub menu 1</a></li>
+											<li><a href="#">Sub menu 2</a></li>
+											<li><a href="#">Sub menu 3</a></li>
+											<li><a href="#">Sub menu 4</a></li>
+											<li><a href="#">Sub menu 5</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Menu 3</a></li>
+									<li><a href="#">Menu 4</a></li>
+									<li><a href="#">Menu 5</a></li>
+									<li><a href="#">Menu 6</a></li>
+									<li><a href="#">Menu 7</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div> -->
+					<div class="menu-left">
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./about-us.html">About us</a></li>
+						</ul>
+					</div>
+					<div class="menu-right">
+						<ul>
+							<li><a href="./service.html">Service</a></li>
+							<li><a href="./contact-us.html">Contact us</a></li>
+						</ul>
+					</div>
+					<a href="./index.html" class="logo">
+						<img src="img/SATAIVA_TECHNOLOGIES.png" alt="logo">
+					</a>
+				</div>
+			</header>
+			<section class="banner"> 
+				<figure>
+				  <img src="img/contact_us.jpg" alt="bg">
+				  <figcaption  class="hero-banner-desc-center top">
+				  	<h1>Contact Us</h1>
+				  </figcaption>
+				</figure>
+			</section>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-8">
+						<form novalidate class="form" onsubmit="handleSubmit()">
+							<div class="form-row">
+								<label class="floating-item">
+									<input type="text" class="floating-item-input" name="fname">
+									<span class="floating-item-label">Name</span>
+								</label>
+							</div>
+							<div class="form-row">
+								<label class="floating-item">
+									<input type="text" class="floating-item-input" name="email">
+									<span class="floating-item-label">Email</span>
+								</label>
+							</div>
+							<div class="form-row">
+								<label class="floating-item">
+									<input type="number" class="floating-item-input" name="phone">
+									<span class="floating-item-label">Mobile</span>
+								</label>
+							</div>
+							<div class="form-row">
+								<label class="floating-item">
+									<input type="number" class="floating-item-input" name="city">
+									<span class="floating-item-label">City</span>
+								</label>
+							</div>
+							<div class="form-row">
+								<label class="floating-item">
+									<input type="number" class="floating-item-input" name="county">
+									<span class="floating-item-label">County</span>
+								</label>
+							</div>
+							<div class="form-row">
+								<label class="floating-item">
+									<input type="number" class="floating-item-input" name="pincode">
+									<span class="floating-item-label">Pincode</span>
+								</label>
+							</div>
+							<div class="form-row">
+								<button class="button-primary" id="subscription_order_form">Submit</button>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	  	<script type="text/javascript">
+		  	var jsArr = ['js/wow.js','js/app.js'];
+			for(var j = 0; j < jsArr.length; j++) {
+		        var script = document.createElement('script')
+		        script.setAttribute('type', 'text/javascript')
+		        script.setAttribute('src', jsArr[j])
+		        document.getElementsByTagName('head')[0].appendChild(script)
+		    }
+	    </script>
+	    <script type="text/javascript">
+		    $('#subscription_order_form')[0].submit();
+		  	function handleSubmit(e) {
+		  		e.preventDefault();
+		  		alert(4);
+		  	}
+	    </script>
+	</body>
+</html>

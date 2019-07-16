@@ -79,3 +79,18 @@
 		}
 	}
 }
+.subpage{
+	.banner{
+		h1{
+			color: white;	
+		}
+		figure{
+			position: relative;
+		}
+		img{
+			height: 400px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}

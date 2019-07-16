@@ -1,8 +1,10 @@
 // Form common
 .form{
-	padding-right: 10px;
+	padding: 40px;
+	background-color: white;
 	&-row {
 		margin-bottom: 36px;
+		max-width: 500px;
 		&.error-row{
 			.floating-item-label, 
 			.floating-item-input:focus ~ .floating-item-label{

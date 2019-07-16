@@ -1,3 +1,6 @@
+section{
+	padding-bottom: 40px;
+}
 .popUp{
 	display: none;
 	@include position(fixed, $left: 0, $right: 0, $top:0, $bottom:0);

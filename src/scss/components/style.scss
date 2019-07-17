@@ -187,3 +187,106 @@ h2{
 		}
 	}
 }
+.footer{
+	background-color: white;
+	padding: 40px 0px 20px;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	a{
+		color: #8ec6a0;
+		&:hover{
+			color:$black;
+		}
+	}
+	&-menu{
+		li{
+			display: block;
+		}
+		a{
+			text-transform: uppercase;
+		}
+	}
+	p{
+		text-align: center;
+	}
+	.social{
+		font-size: 20px;
+	}
+}
+.two-col{
+	&-tile {
+	    background-color: #fff;
+	    .tile-padding{
+	    	padding: 60px;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-flex-direction: column;
+		    flex-direction: column;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+	    }
+	    &:nth-of-type(2n) {
+		    -webkit-flex-direction: row-reverse;
+		    flex-direction: row-reverse;
+		}
+		[class*=col] {
+		    position: relative;
+		    min-height: 425px;
+		}
+	}
+}
+.tile-img > img {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.link-type {
+    color: #f16067;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 20px 10px 0;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    -moz-transition-duration: 0.15s;
+    -o-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    &:after {
+	    content: "\f061";
+	    font-family: "FontAwesome";
+	    font-size: 14px;
+	    vertical-align: middle;
+	    padding-left: 7px;
+	    position: relative;
+	    top: -1px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.two-col-tile [class*=col] {
+	    min-height: auto;
+	}
+}
+@media screen and (max-width: 768px){
+	.tile-img > img {
+	    position: relative;
+	    min-height: 300px;
+	    object-fit: cover;
+	    width: 100%;
+	    object-position: center;
+	}
+}

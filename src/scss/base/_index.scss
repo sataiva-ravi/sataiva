@@ -16,7 +16,7 @@ p{
 	padding-bottom:20px;
 	a{
 		font-family: $font-quicksandBold;	
-		color: $pink;
+		color: $black;
 	}
 }
 img{ max-width:100%;}
@@ -43,7 +43,8 @@ input:focus{
 	outline: none;
 }
 body {
-	background: $body-bg;
+	background: radial-gradient(ellipse at top, #fff, #8ec6a0bf),
+            radial-gradient(ellipse at bottom, #fff, #f1f1f1);
 	color: $body-color;
 	font: {
 		family: $font-quicksandRegular;

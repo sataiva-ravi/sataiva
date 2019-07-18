@@ -276,6 +276,11 @@ h2{
 	    top: -1px;
 	}
 }
+.theme-layer{
+	padding: 40px 0px;
+	margin-bottom: 40px;
+	background-color: #8ec6a0bf;
+}
 @media screen and (max-width: 1200px){
 	.two-col-tile [class*=col] {
 	    min-height: auto;

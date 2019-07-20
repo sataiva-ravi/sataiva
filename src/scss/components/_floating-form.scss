@@ -42,6 +42,7 @@
 	    font-size: $font-md;
 		top:-15px;
 		background-color: transparent;		
+		font-size: 12px;
 	}
 	&-label {
 		@include transition-event(all, 0.15s, ease-in);
@@ -54,6 +55,7 @@
 		text-transform: uppercase;
 		top:8px;
 		line-height:18px;
+		letter-spacing: 0.5px;
 	}
 	&-icon {
 		color: $deep-cerise;

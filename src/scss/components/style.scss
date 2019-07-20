@@ -210,6 +210,9 @@ h2{
 	padding: 40px 0px 20px;
 	font-size: 14px;
 	letter-spacing: 0.5px;
+	h4{
+		padding-bottom: 10px;
+	}
 	a{
 		color: #8ec6a0;
 		&:hover{
@@ -229,6 +232,20 @@ h2{
 	}
 	.social{
 		font-size: 20px;
+		a{
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #8ec6a0;
+			border-radius: 50%;
+			margin: 0px 5px;
+			@include transition(all 0.30s ease)
+			&:hover{
+				border-color: $black;
+			}
+		}
 	}
 }
 .two-col{
@@ -299,6 +316,85 @@ h2{
 	margin-bottom: 40px;
 	background-color: #8ec6a0bf;
 }
+.popup{
+	&-outer{
+		@include position(fixed, $left:0, $top: 0, $bottom:0, $right:0);
+		background-color: rgba(0, 0, 0, 0.3);
+		@include justify-content(center);
+		@include align-items(center);
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+		@include transition(opacity 0.5s ease);
+		z-index: 999;
+		&.open{
+			display: flex;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&-inner{
+		background-color: white;
+		padding: 40px;
+		max-width: 450px;
+		width: 100%;
+		border-radius: 10px;
+		position: relative;
+		.form-row{
+			position: relative;
+			margin-bottom: 20px;
+		}
+		h4{
+			text-align: center;
+    		padding-bottom: 20px;
+		}
+		i{
+			@include position(absolute, $left:15px, $top: 50%);
+			@include transform(translateY(-50%));
+			font-size: 16px;
+			color: #8ec6a0bf;
+			&.fa-user{
+				font-size: 20px;
+			}			
+			&.fa-comment{
+				top: 15px;
+				@include transform(inherit);
+			}
+			&.fa-times-circle{
+				top: 15px;
+				left: inherit;
+				right: 15px;
+				font-size: 30px;
+				@include transform(inherit);
+				cursor: pointer;
+				&:hover{
+					color:$black;
+				}
+			}
+		}
+		textarea{
+			min-height: 120px;
+		}
+		input, textarea{
+		    width: 100%;
+		    padding: 7px 40px;
+		    background-color: transparent;
+		    font-size: 16px;
+		    border: 1px solid $light-gray!important;
+		    border-radius: 4px!important;
+		}
+	}
+}
+.quote{
+	position: relative;
+	padding-left: 40px;
+	font-style: italic;
+	i{
+		top: 0px;
+		@include transform(inherit);
+		font-size: 20px;
+	}
+}
 @media screen and (max-width: 1200px){
 	.two-col-tile [class*=col] {
 	    min-height: auto;
@@ -312,4 +408,15 @@ h2{
 	    width: 100%;
 	    object-position: center;
 	}
+}
+::-webkit-input-placeholder { /* Edge */
+  color: rgba(0, 0, 0, 0.2);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(0, 0, 0, 0.2);
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.2);
 }

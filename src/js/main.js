@@ -204,6 +204,24 @@
                 if ( e.which == 38 || e.which == 40 )
                     e.preventDefault();
             });  
+            $('.lightboxTrigger').on('click', function(){
+              $('.popup-outer').addClass('open');
+              $('body, html').addClass('y-hidden');
+            });
+            $('.fa-times-circle, button').on('click', function(){
+              $('.popup-outer').removeClass('open');
+              $('body, html').removeClass('y-hidden');
+              $('#message, #email-quote, #name-quote').val('');
+            })
+            $('.popup-outer').mouseup(function(e){
+                var container = $(".popup-inner");
+
+                // if the target of the click isn't the container nor a descendant of the container
+                if (!container.is(e.target) && container.has(e.target).length === 0){
+                    $(this).removeClass('open');
+                    $('body, html').removeClass('y-hidden');
+                }
+            });
         };
 
         

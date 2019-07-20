@@ -29,15 +29,23 @@ section{
 	cursor: pointer; 
 }
 .card-col{
-	position:relative;
 	display: block;
-	overflow:hidden;
+	&-img{
+		overflow:hidden;
+		position:relative;
+	}
+	&-content{
+		color: $black;
+		padding: 15px 15px 0px;
+	}
 	img{
 		@include transition(0.5s all ease-in-out);
+		@include filter(grayscale(100%));
 	}
 	&:hover{
 		img{
 			@include transform(scale(1.1))
+			@include filter(grayscale(0%));
 		}
 		.hoverCaption{
 			opacity:1;
@@ -49,13 +57,15 @@ section{
 	@include display-flex;
 	@include justify-content(center);
 	@include align-items(center);
-	background-color:rgba($black, 0.8);
+	//background-color:rgba($black, 0.8);
 	@include position(absolute, $left: 0, $top:0, $right:0, $bottom:0);
 	@include transition(all 0.5s ease-in-out);
 	opacity:0;
 	visibility:hidden;
 	h4{
-		color:$white;
+		color: #1d1c1c;
+	    background: #e1e1e1a8;
+	    padding: 2px 8px;
 	}
 }
 .title{
@@ -393,6 +403,12 @@ h2{
 		top: 0px;
 		@include transform(inherit);
 		font-size: 20px;
+	}
+}
+.welcome{
+	margin-top: -180px;
+	p{
+		padding-top: 60px;
 	}
 }
 @media screen and (max-width: 1200px){

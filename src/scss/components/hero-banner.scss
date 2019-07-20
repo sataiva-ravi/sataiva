@@ -32,7 +32,7 @@
 		top: auto;
 	}
 	.top{
-		top: 180px!important;
+		top: 280px!important;
 		@include transform(translate(-50%, 0%)!important);
 		bottom: auto;
 		text-align: center;
@@ -42,6 +42,11 @@
 	h1{
 		padding-bottom: 1rem;
 		text-transform: uppercase;
+		span{
+			background-color: #ffffff7a;
+			display: inline-block;
+			padding: 0px 20px;
+		}
 	}	
 	.button-border{
 		display: inline-block;
@@ -59,15 +64,16 @@
 
   .button-wrapper {
     overflow:hidden;  
-    max-width: 180px;
+    max-width: 150px;
     margin: 0 auto;
     .button-border {
     position:relative;
     text-transform: uppercase;
     color: #2e2e2e;
     border: solid 2px #2e2e2e;
-    padding: 10px 30px;
+    padding: 8px 10px;
     z-index:1;
+    background-color: #8fc6a2;
     &::before {
       position:absolute;
       border-bottom: solid 2px;
@@ -89,7 +95,7 @@
       width: 600px;
       height: 160px;
       border-radius:50%;
-		background-color: #f7fbf8;
+		background-color: #4e9e68;
       //background-color: red;
       
       //border: solid 2px red;

@@ -451,3 +451,85 @@ h2{
 ::placeholder {
   color: rgba(0, 0, 0, 0.2);
 }
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #402d2d;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+.underlined {
+    background-image: url("#{$relative-path}/img/underline-medium.png");
+    background-size: 100% 1.4em;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-left: -20px;
+    padding-right: 20px;
+    margin-right: -20px;
+    color: inherit;
+    text-decoration: inherit;
+}
+body{
+	overflow-x: hidden;
+}
+.theme-layer2{
+	padding: 30px 15px;
+    background: #8ec6a8;
+    overflow: hidden;
+    h3{
+    	padding-bottom: 0px;
+    }
+    .content{
+    	max-width: 800px;
+    	margin: 0 auto;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    }
+    h3{
+    	color: white;
+    	font-size: 40px;
+    }
+    .button{
+    	color: white;
+    	border-color: white;
+    	&:hover{
+    		color: $black;
+    		border-color: $black;
+    	}
+    }
+}

@@ -127,6 +127,7 @@ h2{
 }
 .generic-list{
 	li{
+		display: block;
 		position: relative;
 		padding: 0px 20px 4px;
 		&:before{
@@ -439,6 +440,66 @@ h2{
 	    width: 100%;
 	    object-position: center;
 	}
+	[class*="col-"] {
+	    flex: 100%;
+	    max-width: 100%;
+	}
+	.welcome{
+		margin-top: 0px;
+	}
+	.theme-layer h3{
+		font-size: 40px;
+    	line-height: 40px;
+	}
+	.slick-prev, .slick-next {
+	    width: 40px;
+	    margin-top: -60px;
+	}
+	.card-section{
+		[class*="col-"] {
+		   margin-bottom: 10px;
+		}
+	}
+	.theme-layer2 {
+		.content{
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		h3{
+			line-height: 42px;
+			padding-bottom: 15px!important;
+		}
+	}
+	.social{
+		margin-bottom: 15px;
+	}
+	.footer{
+		text-align: center;
+		 p a{
+			display: block;
+		}
+	}
+	.footer-menu{
+		margin-bottom: 15px;
+	}
+	h2 {
+	    font-size: 30px;
+	    line-height: 36px;
+	}
+	.two-col-tile:nth-of-type(2n), .two-col-tile {
+	    flex-direction: column;
+	}
+	.two-col-tile .tile-padding{
+		padding: 20px;
+	}
+	.form {
+    	padding: 20px;
+    }
+    .hero-banner-desc-center {
+	    width: 100%;
+	    max-width: 280px;
+	    text-align: center;
+	}
 }
 ::-webkit-input-placeholder { /* Edge */
   color: rgba(0, 0, 0, 0.2);
@@ -532,4 +593,35 @@ body{
     		border-color: $black;
     	}
     }
+}
+.tags{
+	span{
+		display: inline-block;
+		background-color: #4e9e68;
+		margin: 1px 3px;
+		padding: 2px 5px;
+		color: white;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		z-index: 1;
+		&:before{
+			content:"";
+			background-color:#2c6d41e6;
+			@include position(absolute, $left:0, $top:0);
+			width: 0px;
+			height: 100%;
+			@include transition(all 0.25s ease-in);
+			z-index: -1;
+		}
+		&:hover{
+			&:before{
+				width:100%;
+			}
+		}
+	}
 }

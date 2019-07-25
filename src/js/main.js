@@ -222,6 +222,11 @@
                     $('body, html').removeClass('y-hidden');
                 }
             });
+            $('#menu_checkbox').on('click', function(){
+              $('nav').toggleClass('open');
+              $(this).toggleClass('open');
+              $('body, html').toggleClass('y-hidden');
+            })
         };
 
         
